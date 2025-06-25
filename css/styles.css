@@ -12,6 +12,15 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+/*scroll snap*/
+.servicios, 
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *, *:before, *:after { /*para corregir problema de box sizing*/
@@ -168,6 +177,7 @@ h1, h2, h3 {
     padding: 2rem;
     border-radius: 1rem;
 }
+
 
 @media (min-width: 768px) {
     .servicios {
